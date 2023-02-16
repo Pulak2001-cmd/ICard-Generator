@@ -9,6 +9,9 @@ function generateCard() {
     const cardNameElement = document.getElementById("cardName");
     cardNameElement.innerHTML = nameValue;
 
+    const fatherName = document.getElementById("father").value;
+    document.getElementById("cardfatherName").innerHTML = fatherName;
+
     // Get value of college name from form input 
     const collegeNameValue = document.getElementById("collegeName").value;
     // Assign the value of college name to generated card
