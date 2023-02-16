@@ -134,7 +134,7 @@
     }
     
     .card-container {
-        width: 90vw;
+        width: 93vw;
         height: 100%;
         border-radius: 10px;
         font-family: var(--font-body);
@@ -166,7 +166,7 @@
     }
     
     .card-wrapper {
-        width: 80vw;
+        width: 86vw;
         height: 100%;
         background-color: #fff;
         background: linear-gradient(#f8f8f8, #fff);
@@ -174,7 +174,7 @@
         border-radius: 10px;
         overflow: hidden;
         position: relative;
-        margin: 1.5rem;
+        margin: -0.5rem;
         display: flex;
     }
     
