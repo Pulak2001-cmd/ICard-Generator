@@ -3,8 +3,8 @@
  */
 function generateCard() {
     var regexp=/^[2-9]{1}[0-9]{3}[0-9]{4}[0-9]{4}$/;
-           
     var x=document.getElementById("Aadhar").value;
+    
     if(regexp.test(x)){
         document.getElementById("aadharno").innerHTML = x.slice(0, 4)+"-"+x.slice(4, 8)+"-"+x.slice(8);
         // Get value of Student name from form input 

@@ -38,6 +38,13 @@
                     </div>
                     <div class="form-element font-icon">
                         <label class="form-label">
+                            Upload Your Image
+                        </label>
+                        <input class="form-input" type="file" id="imageFile" placeholder="Upload Your File" accept="image/*" onchange="previewImage(event);" />
+                        <i class="fa fa-image"></i>
+                    </div>
+                    <div class="form-element font-icon">
+                        <label class="form-label">
                             Enter Father's Name:
                         </label>
                         <input class="form-input" type="text" id="father" placeholder="Your Father's Name" />
@@ -100,8 +107,9 @@
                     <div class="card-container">
                         <div class="card-wrapper">
                             <div class="user-card">
-                                <span class="user-photo">
-                                    <i class="fa fa-user"></i>
+                                <span class="user-photo" id="pr">
+                                    <!-- <i class="fa fa-user"></i> -->
+                                    <img id="profile" class="profile-img"/>
                                 </span>
                             </div>
                             <div class="general-information">
@@ -147,6 +155,15 @@
     </section>
 
     <script src="./js/index.js"></script>
+    <script>
+        var previewImage = function (event){
+            var output = document.getElementById("profile");
+            output.src = URL.createObjectURL(event.target.files[0]);
+            output.onload = function() {
+                URL.revokeObjectURL(output.src);
+            }
+        };
+    </script>
 </body>
 
 </html>
